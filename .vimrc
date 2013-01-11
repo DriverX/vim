@@ -3,6 +3,7 @@ set encoding=utf-8                                  " set charset translation en
 set termencoding=utf-8                              " set terminal encoding
 set fileencoding=utf-8                              " set save encoding
 set fileencodings=utf8,koi8r,cp1251,cp866,ucs-2le   " список предполагаемых кодировок, в порядке предпочтения
+set hlsearch
 
 set laststatus=2   " всегда показывать строку статуса
 set statusline=%f%m%r%h%w\ %y\ enc:%{&enc}\ ff:%{&ff}\ fenc:%{&fenc}%=(ch:%3b\ hex:%2B)\ col:%2c\ line:%2l/%L\ [%2p%%]
