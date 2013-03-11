@@ -79,7 +79,9 @@ set nocompatible
 filetype on
 filetype plugin on
 filetype indent on
+syntax on
 
+set t_Co=256
 color desert256 
 
 set tabstop=4
@@ -92,12 +94,6 @@ let python_highlight_all=1
 " let python_highlight_indent_errors=0
 let python_highlight_space_errors=0
 
-set t_Co=256
-
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-
-syntax on
-
 set mousehide
 set mouse=
 set novisualbell
@@ -109,4 +105,7 @@ set wrap
 set linebreak
 set nobackup
 set noswapfile
+
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+autocmd FileType xhtml,xml,tmpl so ~/.vim/ftplugin/html_autoclosetag.vim
 
