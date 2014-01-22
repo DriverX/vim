@@ -101,7 +101,7 @@ set novisualbell
 set t_vb=
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set showtabline=1
-set foldcolumn=1
+" set foldcolumn=1
 set wrap
 set linebreak
 set nobackup
